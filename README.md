@@ -1,4 +1,4 @@
-# Dribbble Landing Page Clone 🎨
+# Dribbble 🎨
 
 A responsive front-end demo project inspired by the Dribbble landing page UI.  
 Built using **HTML5** and **CSS3**, this project focuses on layout design, styling, and modern UI structure.
