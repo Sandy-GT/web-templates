@@ -321,3 +321,268 @@ main{
     font-size: 1.6vw;
     margin-right: 1vw;
 }
+
+
+/* RESPONSIVENESS */
+
+/* -------- FINAL NAV REFINEMENT -------- */
+@media (max-width: 1024px) {
+    #nav {
+        height: 10vh;
+        /* slimmer navbar */
+        padding: 0 5vw;
+    }
+
+    /* Increase spacing between left items */
+    #nav-content {
+        width: 60%;
+        justify-content: flex-start;
+        gap: 3vw;
+        /* more breathing space */
+    }
+
+    /* Smaller logo */
+    #nav-content h1 {
+        font-size: 1.4vw;
+        letter-spacing: 0.1vw;
+        margin-right: 2vw;
+    }
+
+    /* Smaller menu items */
+    #nav-content h2 {
+        font-size: 0.85vw;
+        font-weight: 500;
+    }
+
+    /* Right side spacing */
+    #nav-button {
+        width: 18%;
+        justify-content: flex-end;
+        gap: 2vw;
+        /* spacing between Sign up & Login */
+        font-size: 0.75vw;
+    }
+
+    /* Smaller login button */
+    #nav-button #log {
+        width: 5.5vw;
+        height: 5vh;
+        font-size: 0.7vw;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #nav {
+        height: 9vh;
+    }
+
+    #nav-content {
+        gap: 2.5vw;
+    }
+
+    #nav-content h1 {
+        font-size: 2.2vw;
+    }
+
+    #nav-content h2 {
+        font-size: 1.2vw;
+    }
+
+    #nav-button {
+        gap: 2vw;
+        font-size: 1.1vw;
+    }
+
+    #nav-button #log {
+        width: 7vw;
+        height: 4.5vh;
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #nav {
+        padding: 3vw 4vw;
+    }
+
+    #nav-content {
+        gap: 4vw;
+    }
+
+    #nav-content h1 {
+        font-size: 4vw;
+    }
+
+    #nav-content h2 {
+        font-size: 1.8vw;
+    }
+
+    #nav-button {
+        width: fit-content;
+        height: 3vh;
+        gap: 1.5vw;
+        font-size: 2vw;
+    }
+
+    #nav-button #log {
+        width: 12vw;
+        height: 3vh;
+        font-size: 1.8vw;
+    }
+}
+
+/* -------- LANDING RESPONSIVENESS -------- */
+
+@media (max-width: 768px) {
+
+    #landing-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Text first */
+    #landing-content #left {
+        order: 1;
+    }
+
+    /* Video goes below */
+    #landing-content #right {
+        order: 2;
+        height: 42vh;
+        margin-top: 6vw;
+    }
+
+    #landing-content #right #vids video {
+        border-radius: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #landing-content {
+        grid-template-columns: 1fr;
+        padding: 5vw;
+    }
+
+    #landing-content #left {
+        order: 1;
+    }
+
+    #landing-content #left {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5vw;
+        /* main vertical rhythm */
+    }
+
+    #landing-content #nav-services {
+        gap: 3vw;
+        margin-top: 1vw;
+    }
+
+    #landing-content #left #search-bar {
+        margin-top: 1vw;
+    }
+
+    #landing-content #left #down-search-bar {
+        margin-top: 1.5vw;
+        gap: 2vw;
+    }
+
+
+    #landing-content #right {
+        order: 2;
+        margin-top: 5vw;
+        height: 38vh;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #landing-content #left {
+        gap: 4vw;
+    }
+
+    #landing-content #nav-services {
+        gap: 4vw;
+    }
+
+    #landing-content #left #down-search-bar {
+        gap: 3vw;
+    }
+
+    #landing-content #left #search-bar {
+        width: 100%;
+        height: 6vh;
+    }
+
+    #landing-content #left #search-bar #text-box {
+        font-size: 3vw;
+        padding: 3vw 5vw;
+        border-radius: 25px;
+        background-color: #F2F2F2;
+        /* softer */
+    }
+
+    #landing-content #left #search-bar i {
+        width: 9vw;
+        height: 4.8vh;
+        font-size: 3.5vw;
+        right: 1vw;
+    }
+
+    #discover-list #discover-nav #drag {
+        border: 1px solid #EAEAEA;
+    }
+
+    #discover-list #discover-nav #drag-end {
+        border: 1px solid #EAEAEA;
+    }
+
+    /* -------- RESPONSIVE BOX ELEMENTS -------- */
+    #discover-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    #discover-list #discover-nav #drag {
+        height: 4vw;
+        border-radius: 45px;
+    }
+
+    #discover-list #discover-nav #drag-end {
+        height: 4vw;
+        border-radius: 45px;
+    }
+
+    #discover-list #discover-nav #drag-center h4:nth-child(1) {
+        height: 4vw;
+    }
+
+    .box {
+        width: 40vw;
+        height: 20vh;
+        display: inline-block;
+    }
+
+    .signup-button {
+        width: fit-content;
+        padding: 2vw;
+        height: 30px;
+        font-size: 0.5rem;
+    }
+
+    #landing-content #left #down-search-bar h6{
+        font-size: 1.5vw;
+        margin-top: .5vh;
+    }
+
+    .marked{
+        height: 3vh;
+    }
+}
+
