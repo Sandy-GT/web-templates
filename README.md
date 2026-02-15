@@ -5,7 +5,7 @@ Built using **HTML5** and **CSS3**, this project focuses on layout design, styli
 
 ## 🔗 Live Demo 🚀
 
-👉 **Live Preview:** https://sandy-gt.github.io/web-templates/  
+👉 **Live Preview:** https://sandy-gt.github.io/web-templates/
 Check out the working version of this project deployed using GitHub Pages!
 
 ---
